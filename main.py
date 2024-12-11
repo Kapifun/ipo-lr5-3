@@ -1,7 +1,6 @@
-with open('text.txt', 'r') as file:
-    spis = file.read()
-
-words= spis.split()
-
-length=len(words)
-print('Количество слов равно:',length)
+#ввод данных
+with open('text.txt', 'r', encoding='utf-8') as f:#чтение информации из файла text.txt
+    spis = f.read()#переменная списка 
+words = spis.split()#определение слов
+length = len(words)#определение количества слов
+print('Количество слов равно:',length)#вывод результата
